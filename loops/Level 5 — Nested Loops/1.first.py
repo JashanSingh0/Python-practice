@@ -23,6 +23,6 @@ for i in range(n,0,-1):
 # Print a triangle containing numbers.
 n= int(input("Enter side: "))
 for i in range(1,n+1):
-    for j in range(i):
+    for _ in range(i):
         print(i, end=' ')
     print()
