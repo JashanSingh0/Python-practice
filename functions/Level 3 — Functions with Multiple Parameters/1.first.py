@@ -22,6 +22,13 @@ b= int(input("Enter a number: "))
 result=find_gcd(a,b)
 print(result)
 
+# Euclidean Algorithm
+def find_gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+print(find_gcd(48, 18))
+
 # Function that accepts two numbers and returns their LCM.
 def find_lcm(a,b):
     if a == 0 or b == 0:
