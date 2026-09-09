@@ -6,7 +6,7 @@ def list_avg(numbers):
     for num in numbers:
         total+=num
     return total/len(numbers)
-numbers = list(map(int,input("Enter a number: ").split()))
+numbers= list(map(int,input("Enter the list: ").split()))
 result=list_avg(numbers)
 print(result)
 
@@ -18,7 +18,7 @@ def list_rev(numbers):
     for num in range(len(numbers)-1,-1,-1):
         new_list.append(numbers[num])
     return new_list
-numbers = list(map(int,input("Enter a number: ").split()))
+numbers= list(map(int,input("Enter the list: ").split()))
 result=list_rev(numbers)
 print(result)
 
@@ -28,7 +28,7 @@ def list_search(numbers,element):
         if num==element:
             return True
     return False
-numbers = list(map(int,input("Enter a number: ").split()))
+numbers= list(map(int,input("Enter the list: ").split()))
 element=int(input("Enter a number: "))
 result=list_search(numbers,element)
 print(result)
@@ -38,8 +38,8 @@ def list_index(numbers,element):
     for num in range(len(numbers)):
         if element==numbers[num]:
             return num
-    return -1
-numbers = list(map(int,input("Enter a number: ").split()))
+    return -13
+numbers= list(map(int,input("Enter the list: ").split()))
 element=int(input("Enter a number: "))
 result=list_index(numbers,element)
 print(result)
@@ -51,7 +51,7 @@ def list_count(numbers,element):
         if element==num:
             count+=1
     return count
-numbers = list(map(int,input("Enter a number: ").split()))
+numbers= list(map(int,input("Enter the list: ").split()))
 element=int(input("Enter a number: "))
 result=list_count(numbers,element)
 print(result)
