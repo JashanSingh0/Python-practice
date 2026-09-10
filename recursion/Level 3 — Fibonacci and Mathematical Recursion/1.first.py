@@ -1,17 +1,17 @@
-# # Find nth Fibonacci number recursively.
-# def nth_fibonacci(number,a=0,b=1):
-#     if number==1:
-#         return a    
-#     return nth_fibonacci(number-1,b,a+b)
-# print(nth_fibonacci(5))
+# Find nth Fibonacci number recursively.
+def nth_fibonacci(number,a=0,b=1):
+    if number==1:
+        return a    
+    return nth_fibonacci(number-1,b,a+b)
+print(nth_fibonacci(5))
 
-# # Print first n Fibonacci numbers recursively.
-# def n_fibonacci(number,a=0,b=1):
-#     if number==0:
-#         return   
-#     print(a)    
-#     n_fibonacci(number-1,b,a+b)
-# n_fibonacci(5)
+# Print first n Fibonacci numbers recursively.
+def n_fibonacci(number,a=0,b=1):
+    if number==0:
+        return   
+    print(a)    
+    n_fibonacci(number-1,b,a+b)
+n_fibonacci(5)
 
 # Check whether a number is Fibonacci recursively.
 def check_fibonacci(number,a=0,b=1):
