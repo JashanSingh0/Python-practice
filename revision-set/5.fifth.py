@@ -42,7 +42,7 @@ print(result)
 
 # Q192. Find digit sum recursively.
 def digit_sum(number):
-    numbers=abs(numbers)
+    numbers=abs(number)
     if number==0:
         return 0
     digit=number%10
