@@ -1,7 +1,7 @@
 # Q233. Find the second-largest element recursively.
 def second_largest(numbers,index=0,largest=float('-inf'),second=float('-inf')):
     if index== len(numbers):
-        return second if second is not None else 'not there'
+        return second if second != float('-inf') else 'not there'
     if numbers[index]>largest:
         second=largest
         largest=numbers[index]

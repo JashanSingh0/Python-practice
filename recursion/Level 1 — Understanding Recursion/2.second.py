@@ -31,8 +31,16 @@ def factorial(n):
 print(factorial(5))
 
 # Calculate a^b recursively.
+# Q190. Calculate a^b recursively.
 def power(a,b):
+    if a==0 and b<0:
+        return 'Undefined'
     if b==0:
         return 1
+    if b<0:
+        return 1/a*power(a,b+1)
     return a*power(a,b-1)
-print(power(2,3))
+a= int(input("Enter a number: "))
+b= int(input("Enter a number: "))
+result=power(a,b)
+print(result)
